@@ -40,6 +40,7 @@ class Quantity
       value: -self.value,
       uom: @uom,
       conversions: @conversions
+	  
     )
   end
 
@@ -49,6 +50,7 @@ class Quantity
       value: self.value + r.to_uom(@uom).value,
       uom: @uom,
       conversions: @conversions
+	  
     )
   end
 
@@ -67,6 +69,7 @@ class Quantity
       value: self.value * r,
       uom: @uom,
       conversions: @conversions
+	  
     )
   end
 
